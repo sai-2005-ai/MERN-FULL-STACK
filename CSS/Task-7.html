@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task-7</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        padding: 6px;
+        height: px;
+      }
+      #table1 {
+        width: 400px;
+      }
+      #box2 {
+        border: 1px solid crimson;
+        background-color: crimson;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #box1 {
+        border: 1px solid palevioletred;
+        background-color: palevioletred;
+        width: 600px;
+        height: 390px;
+        padding: 20px;
+      }
+      #button {
+        color: black;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <div id="box2">
+        <table>
+          <tr>
+            <td style="color: white; text-align: center">Name :</td>
+            <td><input type="text" placeholder="your name" value="" /></td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">Email :</td>
+            <td><input type="text" placeholder="your email" value="" /></td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">Password :</td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">Phone Number :</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">Gender</td>
+            <td style="color: white">
+              <input type="radio" />Male: <input type="radio" />Female:
+              <input type="radio" />Other:
+            </td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">language :</td>
+            <td>
+              <select>
+                <option hidden>Select language</option>
+                <option>telugu</option>
+                <option>Hindi</option>
+                <option>English</option>
+                <option>Kanada</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">Zip Code :</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td style="color: white; text-align: center">About :</td>
+            <td>
+              <textarea placeholder="Write about yourself...."></textarea>
+            </td>
+          </tr>
+        </table>
+        <table id="table1">
+          <tr>
+            <td>
+              <div id="button">
+                <button style="width: 300px">Register</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
