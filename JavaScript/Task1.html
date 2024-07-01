@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Document</title> 
+
+  </head> 
+
+  <body> 
+
+    <h2>Reverse Of The Number Using Functions</h2> 
+
+    <script> 
+
+      function reverseFunction(num) { 
+
+        let numStr = num.toString(); 
+
+        let reversedStr = ""; 
+
+        for (let i = numStr.length - 1; i >= 0; i--) { 
+
+          reversedStr += numStr[i]; 
+
+        } 
+
+        return parseInt(reversedStr); 
+
+      } 
+
+ 
+
+      let num = 987654321; 
+
+      let reversedNum = reverseFunction(num); 
+
+      document.write("Given number :", +num);
+      document.write('<br/>');
+      document.write("After reversing the number:", +reversedNum); 
+
+    </script> 
+
+  </body> 
+
+</html> 

@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Document</title> 
+
+  <body> 
+
+    <button id="btn" onclick="dateonly();">show date</button> 
+
+    <p id="para"></p> 
+
+    <script> 
+
+      function dateonly(){ 
+
+        let currentDate = new Date(); 
+
+        let day = currentDate.getDate() 
+
+        let monthIndex = currentDate.getMonth();; 
+
+        let year = currentDate.getFullYear(); 
+
+        let monthNames = [ 
+
+        "January", "February", "March", "April", "May", "June", 
+
+        "July", "August", "September", "October", "November", "December" 
+
+         ]; 
+
+        let month = monthNames[monthIndex]; 
+
+        let show= day+"/" + month+"/" + year; 
+
+        document.getElementById("para").innerHTML=show; 
+
+      } 
+
+    </script> 
+
+    <button id="btn1" onclick="date();">show time</button> 
+
+    <p id="para1"></p> 
+
+    <script> 
+
+      function date(){ 
+
+        const d = new Date(); 
+
+        document.getElementById("para1").innerHTML = d; 
+
+      } 
+
+      </script> 
+
+  </body> 
+
+   
+
+</html> 

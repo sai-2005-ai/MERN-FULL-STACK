@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Document</title> 
+
+    <style> 
+
+      table, 
+
+      th, 
+
+      tr, 
+
+      td { 
+
+        width: 300px; 
+
+      } 
+
+      #div1 { 
+
+        border: 1px solid black; 
+
+        width: 350px; 
+
+        height: 150px; 
+
+        margin-left: auto; 
+
+        margin-right: auto; 
+
+      } 
+
+    </style> 
+
+  </head> 
+
+  <body> 
+
+    <div id="div1"> 
+
+      <table> 
+
+        <tr> 
+
+          <td>1st Number :</td> 
+
+          <td><input type="text" id="n1" /></td> 
+
+        </tr> 
+
+        <tr> 
+
+          <td>2st Number :</td> 
+
+          <td><input type="text" id="n2" /></td> 
+
+        </tr> 
+
+      </table> 
+
+      <button type="button" onclick="multiply();">Multiply</button> 
+
+      <button type="button" onclick="divide();">Divide</button> 
+
+      <script> 
+
+        function multiply() { 
+
+          const num1 = document.getElementById("n1").value; 
+
+          const num2 = document.getElementById("n2").value; 
+
+          let result = num1 * num2; 
+
+          document.getElementById("s1").innerHTML = result; 
+
+        } 
+
+        function divide() { 
+
+          const num1 = document.getElementById("n1").value; 
+
+          const num2 = document.getElementById("n2").value; 
+
+          let result = num1 / num2; 
+
+          document.getElementById("s1").innerHTML = result; 
+
+        } 
+
+      </script> 
+
+      <p>The result is :</p> 
+
+      <span id="s1"></span> 
+
+    </div> 
+
+  </body> 
+
+</html> 
